@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiskey Drop | Taste a new Whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-
+    <!--bootstrap stylesheet-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--linking my css under bootstrap-->
 
 </head>
 
 <body>
-    <!-- Nav -->
-    <nav class="navbar navbar-default">
+    <!-- Nav --
+   <!-- <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <!-- Logo -->
+            <!-- Logo --
             <div class="navbar-header">
                 <a href="/" class="navbar-brand">
             Whiskey Drop
             </a>
             </div>
 
-            <!-- Navbar -->
+            <!-- Navbar --
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="">About</a></li>
                 <li class="visible-xs"><a href="">Sign In</a></li>
             </ul>
 
-            <!-- Message -->
+            <!-- Message --
             <div class="navbar-header navbar-right hidden-xs">
                 <a href="/login" class="btn btn-default navbar-btn">Sign Up</a>
                 <p class="navbar-text"><i>Great Whiskey delivered to your door</i></p>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <!-- Alert -->
+    </nav>-->
+ <!--   <div class="container alert-container">
+        <!--Alert--
         <div class="row hidden-xs">
             <div class="col-xs-12">
                 <div class="alert alert-warning">
@@ -44,19 +48,24 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <!-- Callout -->
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">$39.99</s><span class="visible-xs"><br></span><strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#SignUpModal">Sign up!</button></p>
+                    <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#SignUpModal">Sign up!</button></p>
                     <p class="text-muted"><small>You must be 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
-
+        <!-- end of callout -->
+    </div>
+    <div class="container quotes container">
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
@@ -99,8 +108,9 @@
                 </div>
             </div>
         </section>
-        <!-- /.quotes -->
-
+        <!-- end of quotes -->
+    </div>
+    <div class="container features-container">
         <!-- Features -->
         <section class="features">
             <div class="row">
@@ -135,60 +145,60 @@
                 </div>
             </div>
         </section>
-        <!-- this title wont stay to the left on desktop -->
+    </div>
+    </div>
 
+    <!-- extra code iv added in -->
+    <section class="monthly-favorites">
 
-        <section class="monthly-favorites">
+        <h2>monthly favorites:</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Origin</th>
+                </tr>
+            </thead>
 
-            <h2>monthly favorites:</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Origin</th>
-                    </tr>
-                </thead>
+            <tbody>
 
-                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Dunedin DoubleWood</td>
+                    <td>New Zealand</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Kavalan</td>
+                    <td>Taiwan</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Lark</td>
+                    <td>Tasmania</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Captain Don's</td>
+                    <td>The Caribbean</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Pierde Almas</td>
+                    <td>Mexico</td>
+                </tr>
 
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Dunedin DoubleWood</td>
-                        <td>New Zealand</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Kavalan</td>
-                        <td>Taiwan</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Lark</td>
-                        <td>Tasmania</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Captain Don's</td>
-                        <td>The Caribbean</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Pierde Almas</td>
-                        <td>Mexico</td>
-                    </tr>
+            </tbody>
 
-                </tbody>
+        </table>
 
-            </table>
-
-        </section>
-
-        <!-- /.Features -->
+    </section>
+    <!-- end of Features -->
 
     </div>
 
-    <!-- Modal -->
+    <!-- Modal from bootstrap.com -->
     <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -220,10 +230,11 @@
         </div>
     </div>
 
-
+    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
 
+    <!-- JAVASCRIPT -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
