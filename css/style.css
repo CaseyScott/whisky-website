@@ -33,6 +33,45 @@ body {
 
 .features-container {}
 
+/*navbar*/
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+ color: white;
+ background: transparent;
+}
+
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
 /*Jumbotron*/
 
 .jumbotron {
@@ -52,7 +91,7 @@ body {
 }
 
 .jumbotron small {
-    font-size: 60%;
+    font-size: 80%;
     font-style: italic;
     color: #d0d0d0;
 }
@@ -92,7 +131,7 @@ body {
 .btn--red:active,
 .btn--red:focus,
 .btn--red:active:focus {
-    background-color: #f78204;
-    border-color: #f78204;
+    background-color: #c36908;
+    border-color: #c36908;
     color: white;
 }
