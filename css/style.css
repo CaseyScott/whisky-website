@@ -42,8 +42,24 @@ body {
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .25);
     border: 0;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+border: 0;    
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 
 .navbar .navbar-brand {
