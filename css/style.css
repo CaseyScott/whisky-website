@@ -4,11 +4,21 @@ body {
 
 /* Containers*/
 
+.container-wrapper {
+    
+} 
+
+.container-wrapper--red {
+    background-color: #f74704cc;
+     color: white;
+}
+
 .alert-container {}
 
 .callout-container {
     height: 100vh;
     /*viewpoint height*/
+    
     background: url("../images/whiskey.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,7 +27,7 @@ body {
 
     display: flex;
     align-items: center;
-    
+    justify-content: cover;
     position: relative;
 }
 
@@ -29,9 +39,11 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
 }
-.quotes-container {}
 
-.features-container {}
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 
 /*navbar*/
 
@@ -51,7 +63,7 @@ body {
 }
 
 .navbar-default .navbar-toggle {
-border: 0;    
+    border: 0;
 }
 
 .navbar-default .navbar-toggle:hover {
@@ -78,14 +90,30 @@ border: 0;
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
- color: white;
- background: transparent;
+    color: white;
+    background: transparent;
 }
 
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #f74704cc;
+    color: white;
+
+}
+
+.navbar-btn:hover {
+    background-color: #c36908;
+    border-color: #c36908;
+    color: white;
+
 }
 
 /*Jumbotron*/
@@ -115,18 +143,21 @@ border: 0;
 /*block dividers*/
 
 .block-divider {
-    width: 75px;
     height: 5px;
     border: 0;
-
+background-color: #444;
 }
 
 .block-divider--orange {
-    background-color: #f78204;
+    background-color: #f74704cc;
+}
+
+.block-divider--white {
+    background-color: white;
 }
 
 .block-divider--short {
-    width: 45px;
+    width: 35px;
 }
 
 /*Buttons*/
@@ -139,8 +170,8 @@ border: 0;
 
 .btn--red {
     color: white;
-     background-color: #f78204;
-     border-color: #f78204;
+    background-color: #f74704cc;
+    border-color: #f74704cc;
 }
 
 .btn--red:hover,
@@ -150,4 +181,75 @@ border: 0;
     background-color: #c36908;
     border-color: #c36908;
     color: white;
+}
+
+/*Alert*/
+
+.alert-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #8a6d3b;
+    background-color: #e5cc4b;
+    border-color: #e5cc4b;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+/*Page headers*/
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.page-header h2 {
+    margin-top: 0;
+}
+
+.monthly {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Quotes */
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+
+blockquote.quote {
+    border-left: 0;
+}
+
+/*Features*/
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+    
 }
