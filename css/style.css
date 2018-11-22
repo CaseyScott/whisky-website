@@ -130,7 +130,7 @@ body {
 }
 
 .jumbotron .lead {
-    color: #a7a7a7;
+    color: #ece5e5;
     margin: 25px 0;
 }
 
@@ -253,3 +253,7 @@ blockquote.quote {
     color: #f05f40;
     
 }
+.feature .btn:hover {
+    background-color: #c36908;
+    border-color: #c36908;
+    color: white;
